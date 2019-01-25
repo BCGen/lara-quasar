@@ -1,0 +1,20 @@
+{
+    "name": "bcgen/lara-helper",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BCGen\\": "./"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BCGen\\Providers\\ViewServiceProvider"
+            ],
+            "aliases": {
+                "RouteHelper": "BCGen\\Helpers\\Route"
+            }
+        }
+    }
+}
